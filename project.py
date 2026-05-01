@@ -55,3 +55,14 @@ print("Summary")
 print("=" * 50)
 print(f"Decision Tree Accuracy : {dt_acc * 100:.2f}%")
 print(f"KNN Accuracy           : {knn_acc * 100:.2f}%")
+
+print("\n" + "=" * 50)
+print("Best Model Selection")
+print("=" * 50)
+
+if dt_acc > knn_acc:
+    print("Best Model: Decision Tree")
+elif knn_acc > dt_acc:
+    print("Best Model: KNN")
+else:
+    print("Both models have the same performance")
